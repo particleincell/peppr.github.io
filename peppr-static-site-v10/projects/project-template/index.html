@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Copy this folder, rename it, then replace the marked project content. -->
+    <base href="../../" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Title | PEPPR</title>
+    <link rel="stylesheet" href="assets/css/site.css" />
+  </head>
+  <body data-page="projects">
+    <div data-header></div>
+    <main id="main">
+      <section class="detail-hero">
+        <div class="container">
+          <div class="eyebrow">Research project · Status</div>
+          <h1>Project title</h1>
+          <p class="lede">Replace this one-sentence summary.</p>
+          <div class="actions">
+            <a class="button ghost" href="projects.html">← All projects</a
+            ><a class="button" href="team.html#contact">Contact the team</a>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <!-- Replace the image path and caption. Remove this figure if there is no image yet. -->
+          <figure class="project-image">
+            <img
+              src="assets/images/peppr-logo-seal.png"
+              alt="Describe the project image"
+            />
+            <figcaption>Image caption or credit.</figcaption>
+          </figure>
+          <div class="project-story">
+            <article>
+              <div class="eyebrow">Rationale</div>
+              <h2>Why this project matters</h2>
+              <p>
+                Use this space for the problem, opportunity, and technical
+                context behind the project. Add as many paragraphs as needed;
+                the column is designed for readable long-form writing.
+              </p>
+              <p>
+                Describe the approach, the people involved, and what PEPPR is
+                learning through the work.
+              </p>
+            </article>
+            <aside class="project-side">
+              <div class="eyebrow">Goals</div>
+              <h2>What success looks like</h2>
+              <ul class="goal-list">
+                <li>First concrete project goal.</li>
+                <li>Second concrete project goal.</li>
+                <li>Third concrete project goal.</li>
+              </ul>
+            </aside>
+          </div>
+          <div class="project-progress">
+            <div class="eyebrow">Progress</div>
+            <h2>Current work and next steps</h2>
+            <p>
+              Write a dated progress update here. Add another paragraph whenever
+              the project reaches a milestone, changes direction, or needs
+              support.
+            </p>
+          </div>
+
+          <!-- Technical specifications: copy a .spec row to add a field. -->
+          <section class="project-specs" aria-labelledby="specifications-title">
+            <div>
+              <div class="eyebrow">Technical specifications</div>
+              <h2 id="specifications-title">Key performance data</h2>
+              <div class="spec-list">
+                <div class="spec"><span>Thrust</span><strong>TBD</strong></div>
+                <div class="spec">
+                  <span>Mass flow rate</span><strong>TBD</strong>
+                </div>
+                <div class="spec">
+                  <span>Propellant</span><strong>TBD</strong>
+                </div>
+                <div class="spec">
+                  <span>Input power</span><strong>TBD</strong>
+                </div>
+                <div class="spec">
+                  <span>Discharge voltage</span><strong>TBD</strong>
+                </div>
+                <div class="spec">
+                  <span>Specific impulse</span><strong>TBD</strong>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="eyebrow">How to use this section</div>
+              <p class="project-specs-note">
+                Replace the labels and values with the measurements or design
+                targets that matter to this project. It also works for
+                facilities, software, and non-thruster projects.
+              </p>
+            </div>
+          </section>
+
+          <!-- Add another figure inside .carousel-viewport for every new image. -->
+          <section
+            class="project-carousel"
+            data-carousel
+            aria-label="Project image gallery"
+          >
+            <div class="project-carousel-heading">
+              <div>
+                <div class="eyebrow">Gallery</div>
+                <h2>Project images</h2>
+              </div>
+              <p class="project-specs-note">
+                Use this area for renders, build photos, test images, or plots.
+              </p>
+            </div>
+            <div class="carousel-viewport">
+              <figure class="carousel-slide">
+                <img
+                  src="assets/images/peppr-logo-seal.png"
+                  alt="Describe the first project image"
+                />
+                <figcaption>Image caption or credit.</figcaption>
+              </figure>
+              <figure class="carousel-slide">
+                <img
+                  src="assets/images/peppr-logo-seal.png"
+                  alt="Describe the second project image"
+                />
+                <figcaption>Copy this figure to add more images.</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-controls">
+              <button
+                class="carousel-button"
+                type="button"
+                data-carousel-previous
+                aria-label="Previous image"
+              >
+                ←</button
+              ><span
+                class="carousel-count"
+                data-carousel-count
+                aria-live="polite"
+              ></span
+              ><button
+                class="carousel-button"
+                type="button"
+                data-carousel-next
+                aria-label="Next image"
+              >
+                →
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <div data-footer></div>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>

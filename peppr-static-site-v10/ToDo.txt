@@ -1,0 +1,22 @@
+Remove terms of service and privacy policy pages
+
+Projects Thumbs
+	rn the way to change the project thumbnails is in site.js which is very unintuintive, it should be in the content with the other thumbnail stuff, and not have the same pic for each project preview card
+
+Project Pages
+	Rework layout to have more room for pictures and paragraphs describing rationale
+	somewhere to write about goals
+	just more room and easy template to write about project and progress.
+
+Publications
+	David and Eddie's pdfs?
+Team and Contact
+	Ask everyone for pics
+	Fill in names for now
+	rewrite caption at top
+Direct Inquiries
+	Add, contact info
+	
+Support Us
+	redo layout, not copy pasted card format
+	think of what to say to solicit donos

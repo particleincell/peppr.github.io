@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Research Projects | PEPPR</title>
+    <link rel="stylesheet" href="assets/css/site.css" />
+  </head>
+  <body data-page="projects">
+    <div data-header></div>
+    <main id="main" data-static>
+      <section class="page-head">
+        <div class="container">
+          <div class="eyebrow">Project portfolio</div>
+          <h1>Research projects</h1>
+          <p class="lede">
+            Ongoing propulsion, plasma, and space enviornment initiatives.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div
+            class="filters"
+            id="project-filters"
+            aria-label="Filter projects"
+          ></div>
+          <div class="sort-row">
+            <label for="project-sort">Project order</label
+            ><select class="sort-select" id="project-sort">
+              <option value="featured">Sort: featured</option>
+              <option value="title">Sort: A–Z</option>
+              <option value="status">Sort: active first</option>
+            </select>
+          </div>
+
+          <div class="project-list" id="projects"></div>
+          <p class="empty" id="empty" hidden>No projects match that filter.</p>
+        </div>
+      </section>
+    </main>
+    <div data-footer></div>
+    <script src="assets/data/content.js"></script>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>
