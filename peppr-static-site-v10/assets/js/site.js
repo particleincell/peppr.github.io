@@ -139,18 +139,14 @@
       event.preventDefault();
       if (!inquiryForm.checkValidity()) return inquiryForm.reportValidity();
       const fields = new FormData(inquiryForm);
-      const mailto = new URL(
-        `mailto:${inquiryForm.dataset.recipient || "peppr@calpoly.edu"}`,
-      );
-      mailto.searchParams.set(
-        "subject",
-        `${fields.get("subject")} — ${fields.get("name")}`,
-      );
-      mailto.searchParams.set(
-        "body",
-        `${fields.get("message")}\n\nReply to: ${fields.get("email")}`,
-      );
-      window.location.href = mailto.href;
+      const recipient = inquiryForm.dataset.recipient || "peppr@calpoly.edu";
+
+      const subject = `${fields.get("subject")} — ${fields.get("name")}`;
+      const body = `${fields.get("message")}\n\nReply to: ${fields.get("email")}`;
+
+      const mailto = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.location.href = mailto;
       const notice = inquiryForm.querySelector(".notice");
       if (notice) notice.hidden = false;
     });
