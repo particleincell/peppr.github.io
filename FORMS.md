@@ -1,6 +1,6 @@
 # Direct Inquiries form
 
-The included Direct Inquiries form is fully functional on a plain static host: it validates required fields and opens the visitor’s email application with a pre-addressed, pre-filled message. Update the `data-recipient="peppr@calpoly.edu"` value on the form in `team.html` before launch if the recipient changes.
+The included Direct Inquiries form is fully functional on a plain static host: it validates required fields and opens the visitor’s email application with a pre-addressed, pre-filled message. Update the `data-recipient="peppr@calpoly.edu"` value on the form in `team/index.html` before launch if the recipient changes.
 
 ## Sending without opening an email app
 

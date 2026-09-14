@@ -831,6 +831,33 @@ h3 {
   margin-bottom: 20px;
 }
 
+/* Team-page gallery: uses the same lightweight carousel behavior as projects. */
+.team-gallery-section {
+  padding: 48px 0 0;
+}
+
+.team-gallery-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+.team-gallery-heading h2 {
+  margin: 7px 0 0;
+}
+
+.team-carousel .carousel-viewport {
+  min-height: min(56vw, 620px);
+}
+
+.team-carousel .carousel-slide img {
+  min-height: min(56vw, 620px);
+  max-height: 620px;
+  object-fit: cover;
+}
+
 .project-carousel-heading h2 {
   margin: 7px 0 0;
 }
@@ -1104,6 +1131,10 @@ code {
     padding-top: 38px;
   }
   .project-carousel-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .team-gallery-heading {
     align-items: flex-start;
     flex-direction: column;
   }

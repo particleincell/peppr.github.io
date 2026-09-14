@@ -5,11 +5,11 @@
   const content = window.PEPPR_CONTENT || { projects: [], publications: [] };
   const page = document.body.dataset.page;
   const nav = [
-    ["Home", "index.html", "home"],
-    ["Projects", "projects.html", "projects"],
-    ["Publications", "publications.html", "publications"],
-    ["Team & Contact", "team.html", "team"],
-    ["Support Us", "support_us.html", "support"],
+    ["Home", "/", "home"],
+    ["Projects", "/projects/", "projects"],
+    ["Publications", "/publications/", "publications"],
+    ["Team & Contact", "/team/", "team"],
+    ["Support Us", "/support-us/", "support"],
   ];
   const escapeHTML = (value) =>
     String(value)
@@ -23,10 +23,10 @@
   const main = document.querySelector("#main");
 
   if (header) {
-    header.innerHTML = `<a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="container nav"><a href="index.html" aria-label="PEPPR home"><img class="wordmark" src="assets/images/peppr-wordmark.png" alt="PEPPR"></a><button class="menu" type="button" aria-label="Open menu" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Main navigation">${nav.map(([label, href, key]) => `<a href="${href}" ${page === key ? 'aria-current="page"' : ""}>${label}</a>`).join("")}</nav></div></header>`;
+    header.innerHTML = `<a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="container nav"><a href="/" aria-label="PEPPR home"><img class="wordmark" src="/assets/images/peppr-wordmark.png" alt="PEPPR"></a><button class="menu" type="button" aria-label="Open menu" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Main navigation">${nav.map(([label, href, key]) => `<a href="${href}" ${page === key ? 'aria-current="page"' : ""}>${label}</a>`).join("")}</nav></div></header>`;
   }
   if (footer) {
-    footer.innerHTML = `<footer class="site-footer"><div class="container"><img class="wordmark" src="assets/images/peppr-wordmark.png" alt="PEPPR"><p>Poly Electric Propulsion and Plasma Research helps students build relevant electric-propulsion experience.</p><div class="footer-links"><a href="team.html#contact">Contact</a><a href="support_us.html">Partner with us</a></div><p>© ${new Date().getFullYear()} Poly Electric Propulsion and Plasma Research.</p></div></footer>`;
+    footer.innerHTML = `<footer class="site-footer"><div class="container"><img class="wordmark" src="/assets/images/peppr-wordmark.png" alt="PEPPR"><p>Poly Electric Propulsion and Plasma Research helps students build relevant electric-propulsion experience.</p><div class="footer-links"><a href="/team/#contact">Contact</a><a href="/support-us/">Partner with us</a></div><p>© ${new Date().getFullYear()} Poly Electric Propulsion and Plasma Research.</p></div></footer>`;
   }
 
   const menu = document.querySelector(".menu");
